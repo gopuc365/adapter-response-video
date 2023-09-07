@@ -9,6 +9,7 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
+      - run: sleep 1000
       - run: svn co https://plugins.svn.wordpress.org/adapter-responsive-video --depth=empty .
 
 workflows:
